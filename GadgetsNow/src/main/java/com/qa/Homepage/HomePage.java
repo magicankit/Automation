@@ -28,7 +28,8 @@ public class HomePage
 		System.out.println("Pop-up");
 		driver.findElement(By.xpath(".//div[@class='ntfc_buttongroup details']/button[@class='ntfc_dactive']")).click();
 			 }
-	// Size determine and Print Navigation elements
+//
+	//========================== Size determine and Print Navigation elements (L2)=========================
 	 public void Navsize() throws InterruptedException
 	 {
 		 try
@@ -57,44 +58,54 @@ public class HomePage
 		 
 		 }
 			}
+	
+//=========================== Mouse Hovering Functionality================================
+//	 public void mousehover ()
+//	 {
+//		 try
+//		 {
+//		 WebElement navigation = driver.findElement(By.xpath(LINKS_START_XPATH+i+LINKS_END_XPATH));
+//		 Actions action_navigation = new Actions(driver);
+//		 action_navigation.moveToElement(navigation).perform();
+//		 
+//		 System.out.println("Checking Mouse Hovering Functionality");
+//		 int size=driver.findElements(By.xpath(".//*[@id='navigation']/div/ul/li/a")).size();
+//		 System.out.println(size);
+//		 for (int i=3;i<size;i++)
+//
+//		 {
+//			 String text = driver.findElement(By.xpath(LINKS_START_XPATH+i+LINKS_END_XPATH)).getText();
+//			 System.out.println(text + i);
+//		 	if (text.equals("NEWS"))
+//		 	{
+//		 		System.out.println("Hovering");
+//		 		WebElement element_mobile = driver.findElement(By.xpath(".//*[@id='navigation']/div/ul/li[4]/a"));
+//
+//
+//		 		Actions action_mobile = new Actions(driver);
+//		 		action_mobile.moveToElement(element_mobile).perform();
+//
+//		 	}
+//
+//			 // Mouse Over on News Link
+//			 /*WebElement element_mobile = driver.findElement(By.xpath(".//*[@id='navigation']/div/ul/li[4]/a"));
+//			 Actions a1 = new Actions(driver);
+//			 a1.moveToElement(element_mobile).perform();*/
+//			 
+//		 }
+//		 }
+//		 catch(Exception e)
+//		 {
+//		 }
+//		 }
 	 
-	 public void mousehover ()
+	 
+	 
+//============================Clicking any 1 article from each section of Home Page===============
+	 
+	 public void clickarticle()
 	 {
-		 try
-		 {
-		 WebElement navigation = driver.findElement(By.xpath(LINKS_START_XPATH+i+LINKS_END_XPATH));
-		 Actions action_navigation = new Actions(driver);
-		 action_navigation.moveToElement(navigation).perform();
 		 
-		 System.out.println("Checking Mouse Hovering Functionality");
-		 int size=driver.findElements(By.xpath(".//*[@id='navigation']/div/ul/li/a")).size();
-		 System.out.println(size);
-		 for (int i=3;i<size;i++)
-
-		 {
-			 String text = driver.findElement(By.xpath(LINKS_START_XPATH+i+LINKS_END_XPATH)).getText();
-			 System.out.println(text + i);
-		 	if (text.equals("NEWS"))
-		 	{
-		 		System.out.println("Hovering");
-		 		WebElement element_mobile = driver.findElement(By.xpath(".//*[@id='navigation']/div/ul/li[4]/a"));
-
-
-		 		Actions action_mobile = new Actions(driver);
-		 		action_mobile.moveToElement(element_mobile).perform();
-
-		 	}
-
-			 // Mouse Over on News Link
-			 /*WebElement element_mobile = driver.findElement(By.xpath(".//*[@id='navigation']/div/ul/li[4]/a"));
-			 Actions a1 = new Actions(driver);
-			 a1.moveToElement(element_mobile).perform();*/
-			 
-		 }
-		 }
-		 catch(Exception e)
-		 {
-		 }
-		 }
+	 }
 	 }
 

@@ -1,4 +1,4 @@
-package com.qa.Homepage;
+package com.qa.MainClass;
 
 import java.util.concurrent.TimeUnit;
 
@@ -8,6 +8,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import com.qa.Homepage.HomePage;
 
 public class MainClass 
 {
